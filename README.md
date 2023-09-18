@@ -1,6 +1,6 @@
 # Sports and Fitness Portal Website
 
-- A sports and portal website (created for competition by @arnavnagpurkar and @AryanSarode18)
+- A sports and portal website (created for competition by [@arnavnagpurkar](https://github.com/arnavnagpurkar/) and [@AryanSarode18](https://github.com/arnavnagpurkar/)
 
 ## Features (To be Written)
 
@@ -126,5 +126,5 @@ git clone https://github.com/arnavnagpurkar/Sports-and-Fitness-Portal.git
 
 ## Contribution and Pull Requests 
 - Feel free to post issues on this project we'll try to solve them
-- As this is project for competition no one can contribute in the project except @arnavnagpurkar and @AryanSarode18 so sorry PR can't be accepted 
+- As this is project for competition no one can contribute in the project except [@arnavnagpurkar](https://github.com/arnavnagpurkar/) and [@AryanSarode18](https://github.com/arnavnagpurkar/) so sorry PR can't be accepted 
 
