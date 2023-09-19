@@ -31,69 +31,42 @@
   ```
 - To run the development server (WITHOUT DEBUGGING)
   - In Windows (Powershell) - <b>Recommended</b>
-    - If in the Project Directory:
       ```bash
-      cd ../
-      $env:FLASK_APP = "Sports-and-Fitness-Portal"
-      $env:FLASK_ENV = "development"
-      python -m flask run
-      ```
-    - If in the Previous Directory:
-      ```bash
-      $env:FLASK_APP = "Sports-and-Fitness-Portal"
+      $env:FLASK_APP = "Sports_and_Fitness_Portal"
       $env:FLASK_ENV = "development"
       python -m flask run
       ```
   - In Windows (CMD)
-    - If in the Project Directory:
       ```bash
-      cd ../
-      set FLASK_APP=Sports-and-Fitness-Portal
-      set FLASK_ENV=development
-      python -m flask run
-      ```
-    - If in the Previous Directory:
-      ```bash
-      set FLASK_APP=Sports-and-Fitness-Portal
+      set FLASK_APP=Sports_and_Fitness_Portal
       set FLASK_ENV=development
       python -m flask run
       ```
   - For Linux/Mac
-    - If in Project Directory:
       ```bash
-      cd ../
-      export FLASK_APP=Sports-and-Fitness-Portal
-      export FLASK_ENV=development
-      python3 -m flask run
-      ```
-    - If in the Previous Directory:
-      ```bash
-      export FLASK_APP=Sports-and-Fitness-Portal
+      export FLASK_APP=Sports_and_Fitness_Portal
       export FLASK_ENV=development
       python3 -m flask run
       ```
 
-- Enable Debugging in Development server <b>(MORE RECOMMENDED THAN THE NORMAL ONE)</b><br>The below commands only work on previous directory if you are not in the previous make sure that you run this command first:
-  ```bash
-  cd ../
-  ```
+- Enable Debugging in Development server <b>(MORE RECOMMENDED THAN THE NORMAL ONE)</b><br>
   - Windows (Powershell) - <b>Recommended</b>
     ```bash
-    $env:FLASK_APP = "Sports-and-Fitness-Portal"
+    $env:FLASK_APP = "Sports_and_Fitness_Portal"
     $env:FLASK_ENV = "development"
     $env:FLASK_DEBUG = "1"  # Enable debugging
     python -m flask run
     ```
   - Windows (CMD)
     ```bash
-    set FLASK_APP=Sports-and-Fitness-Portal
+    set FLASK_APP=Sports_and_Fitness_Portal
     set FLASK_ENV=development
     set FLASK_DEBUG=1  # Enable debugging
     python -m flask run
     ```
   - Mac/Linux
     ```bash
-    export FLASK_APP=Sports-and-Fitness-Portal
+    export FLASK_APP=Sports_and_Fitness_Portal
     export FLASK_ENV=development
     export FLASK_DEBUG=1  # Enable debugging
     python -m flask run
@@ -102,7 +75,7 @@
 - You should receive outputs similar to these:
   - Debugging On:
     ```bash
-    * Serving Flask app "Sports-and-Fitness-Portal"
+    * Serving Flask app "Sports_and_Fitness_Portal"
     * Environment: development
     * Debug mode: on
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to  quit)
@@ -112,7 +85,7 @@
     ```
   - Debugging off
     ```bash
-    * Serving Flask app "Sports-and-Fitness-Portal"
+    * Serving Flask app "Sports_and_Fitness_Portal"
     * Environment: development
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to  quit)
     ```
