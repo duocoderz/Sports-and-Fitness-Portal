@@ -101,7 +101,7 @@ Use this command to clone the project in your device.<br>
 (You must have git installed on your computer)
 
 ```shell
-git clone https://github.com/arnavnagpurkar/Sports-and-Fitness-Portal.git
+git clone https://github.com/duocoderz/Sports-and-Fitness-Portal.git
 ```
 
 ## Contribution and Pull Requests 
