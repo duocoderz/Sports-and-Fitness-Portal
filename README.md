@@ -106,7 +106,7 @@ git clone https://github.com/duocoderz/Sports-and-Fitness-Portal.git
 
 ## Contribution and Pull Requests 
 - Feel free to post issues on this project we'll try to solve them
-- As this is project for competition no one can contribute in the project except [@arnavnagpurkar](https://github.com/arnavnagpurkar/) and [@AryanSarode18](https://github.com/arnavnagpurkar/) so sorry PR can't be accepted 
+- As this is project for competition no one can contribute in the project except [@arnavnagpurkar](https://github.com/arnavnagpurkar/) and [@AryanSarode18](https://github.com/aryansarode18/) so sorry PR can't be accepted 
 
 ## Author
 
