@@ -16,16 +16,16 @@
 - Feature 3
 - Feature 4
 
-## Requirements (If cloning the project)
+<!-- ## Requirements (If cloning the project)
 
 - Python 3
 - Flask
 - Flask-SQLAlchemy
 - A Web Browser
 
-## Python Commands
+## Python Commands -->
 
-- To download flask and SQLAlchemy:<br>
+<!-- - To download flask and SQLAlchemy:<br>
   - Windows
   ```shell
     pip install flask
@@ -95,7 +95,7 @@
     * Serving Flask app "Sports_and_Fitness_Portal"
     * Environment: development
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to  quit)
-    ```
+    ``` -->
 ## Clone
 Use this command to clone the project in your device.<br>
 (You must have git installed on your computer)
