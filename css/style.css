@@ -7,6 +7,7 @@
     box-sizing: border-box;
     outline: none;
     color: #fff;
+    scroll-behavior:smooth;
 }
 
 :root{
@@ -271,4 +272,91 @@ span{
 
 .workout .content .frame p{
     font-size: 0.8em;
+}
+
+.trainers .content{
+    flex-wrap: wrap;
+}
+
+.trainers .content .frame{
+    position: relative;
+    width: 500px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    margin: 10px;
+    background: #222;
+}
+
+.trainers .content .frame .box{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trainers .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+
+.trainers .content .frame .box:hover img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+
+.trainers .content .frame .headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.trainers .content .frame .headline i{
+    height: 22px;
+    width: 22px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    Line-height: 22px;
+}
+
+.trainers .content .frame .headline i:hover{
+    border: 1.5px solid var(--prime);
+    background: var(--prime);
+}
+
+.trainers .content .frame .headline .title{
+    color: var(--prime);
+    font-size: 1.2em;
+}
+
+.trainers .content .frame p{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 5px;
+}
+
+.trainers .content .frame a{
+    top: 20px;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.trainers .content .frame a:hover{
+    color: #fff;
+    background: var(--prime);
 }
