@@ -360,3 +360,51 @@ span{
     color: #fff;
     background: var(--prime);
 }
+
+.diet .content{
+    flex-direction: column;
+}
+
+.diet .content .row{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.diet .content .row:nth-child(odd) .a{
+    order: 2;
+}
+
+.diet .content .row .cols{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+.diet .content .row .cols .heading{
+    font-size: 2em;
+    color: #ff8502;
+    text-transform: capitalize;
+}
+
+.diet .content .row:nth-child(odd) .cols .heading{
+    color: #02a3ff;
+}
+
+.diet .content .row .cols .boxes{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.diet .content .row .cols .boxes img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
