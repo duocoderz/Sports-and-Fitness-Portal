@@ -7,7 +7,7 @@
     box-sizing: border-box;
     outline: none;
     color: #fff;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -28,6 +28,22 @@ body{
     z-index: 1111;
     transition: 0.5s ease;
 }
+
+.navbar.sticky{
+    padding: 6px 60px;
+    background: #0c1518;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar.sticky .logo{
+    font-size: 2em;
+    color: var(--prime);
+}
+
+.navbar.sticky .logo b{
+    color: #fff;
+}
+
 
 .logo{
     font-size: 2.8em;
@@ -407,4 +423,88 @@ span{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.contact .content{
+    min-height: 100vh;
+}
+
+.contact .content form{
+    margin: auto 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact .content form input{
+    color:#222;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+
+.contact .content form textarea{
+    width: 100%;
+    padding: 10px;
+    color: #222;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+    border: 2px solid var(--prime);
+    transition: 0.1s ease;
+}
+
+.contact .content form .btn{
+    letter-spacing: 1px;
+    width: 100px;
+    display: inline-block;
+    color: var(--prime);
+    border-color: var(--prime);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact .content form .btn:hover{
+    background: var(--prime);
+    color: #fff;
+}
+.contact .content .bgimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../img/bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(20%);
+}
+
+.copyright{
+    text-transform: capitalize;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background: #222;
+    text-align: center;
+    font-size: 18px;
+}
+
+.copyright a{
+    color: var(--prime);
+    text-decoration: none;
+    margin: 0 2px;
+    font-weight: lighter;
 }
