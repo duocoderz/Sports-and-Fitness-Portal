@@ -508,3 +508,60 @@ span{
     margin: 0 2px;
     font-weight: lighter;
 }
+
+.health-tips {
+    background-color: #131b2b;
+    padding: 80px 0;
+}
+
+.health-tips .main h2 {
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.health-tips .main h6 {
+    font-size: 18px;
+    color: #d7d7d7;
+    margin-top: 10px;
+}
+
+.health-tips .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.health-tips .tip {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.health-tips .tip:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.health-tips .tip img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.health-tips .tip h3 {
+    font-size: 20px;
+    color: var(--prime);
+    margin: 10px 0;
+}
+
+.health-tips .tip p {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+}
