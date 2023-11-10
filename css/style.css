@@ -565,3 +565,127 @@ span{
     color: #fff;
     margin: 10px 0;
 }
+
+@media screen and (max-width: 900px){
+    .navbar{
+        padding: 0 60px;
+    }
+
+    .navbar ol{
+        display: none;
+    }
+
+    .navbar ol.active{
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background: #222;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100% - 60px);
+    }
+
+    .navbar ol.active li{
+        margin: 8px;
+    }
+
+    .navbar ol.active li a{
+
+        font-size: 25px;
+    }
+
+    .navbar .toggle{
+        height: 25px;
+        width: 25px;
+        margin: auto 0;
+        cursor: pointer;
+        background: url(../img/menubar.jpg);
+        background-size: 25px;
+        background-position: center;
+        filter: invert(1);
+        background-repeat: no-repeat;
+    }
+
+    .navbar .toggle.active{
+        background: url(../img/close.png);
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .highlights h3{
+        font-size: 3vw;
+        padding: 5px 10px;
+        border-left: 3px solid var(--prime);
+    }
+
+    .highlights h1{
+        font-size: 16vw;
+    }
+
+    .highlights .join{
+        font-size: 1.8vw;
+        border: 1px solid var(--prime);
+    }
+
+    .main h2{
+        font-size: 1.5rem;
+    }
+
+    .main h6{
+        font-size: 10px;
+    }
+
+    .about .content{
+        flex-direction: column;
+    }
+
+    .workout .content .frame{
+        width: 260px;
+        padding: 18px;
+    }
+
+    .trainers .content .frame{
+        width: 350px;
+        padding: 15px 15px 40px 15px;
+        margin: 10px 5px;
+    }
+
+    .trainers .content .frame .box{
+        height: 200px;
+    }
+
+    .trainers .content .frame a{
+        border: 1.5px solid var(--prime);
+        padding: 3px 15px;
+    }
+
+    .diet .content .row{
+        flex-direction: column;
+    }
+
+    .diet .content .row .cols{
+        width: 100%;
+    }
+
+    .diet .content .row:nth-child(odd) .a{
+        order: 0;
+    }
+
+    .diet .content .row .cols .heading{
+        font-size: 1.5em;
+    }
+
+    .diet .content .row .cols p{
+        font-size: 13px;
+    }
+
+    .diet .content .row .cols .boxes{
+        width: 90%;
+        margin: auto;
+    }
+}
