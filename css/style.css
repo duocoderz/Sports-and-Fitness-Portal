@@ -247,6 +247,88 @@ span{
     object-fit: cover;
 }
 
+.plans .content{
+    flex-wrap: wrap;
+}
+
+.plans .content .frame{
+    position: relative;
+    width: 300px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    margin: 10px;
+    background: #222;
+}
+
+.plans .content .frame .headline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plans .content .frame .headline .title{
+    color: var(--prime);
+    font-size: 1.2em;
+}
+
+.plans .content .frame .headline .price {
+    font-size: 1.2em;
+    padding-bottom: 18px;
+}
+
+.plans .content .frame .details{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plans .content .frame .details i{
+    font-size: 1.1em;
+    margin-right: 20px;
+    Line-height: 22px;
+}
+
+.plans .content .frame .details p{
+    font-size: 0.9em;
+    position: relative;
+    padding-bottom: 12px;
+    display: table;
+}
+
+.plans .content .frame .details p::before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+    font-size: 1.1em;
+    margin-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.plans .content .frame .button a{
+    top: 20px;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.plans .content .frame .button{
+    display: flex;
+    justify-content: center;
+}
+
+.plans .content .frame a:hover{
+    color: #fff;
+    background: var(--prime);
+}
+
 .workout .content{
     flex-wrap: wrap;
 }
