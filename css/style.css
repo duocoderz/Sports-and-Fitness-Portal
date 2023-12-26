@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
@@ -10,15 +10,15 @@
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --prime: #00ff34;
 }
 
-body{
+body {
     background-color: #131b2b;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     position: fixed;
@@ -29,23 +29,23 @@ body{
     transition: 0.5s ease;
 }
 
-.navbar.sticky{
+.navbar.sticky {
     padding: 6px 60px;
     background: #0c1518;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.navbar.sticky .logo{
+.navbar.sticky .logo {
     font-size: 2em;
     color: var(--prime);
 }
 
-.navbar.sticky .logo b{
+.navbar.sticky .logo b {
     color: #fff;
 }
 
 
-.logo{
+.logo {
     font-size: 2.8em;
     font-weight: 800;
     letter-spacing: 2px;
@@ -53,38 +53,37 @@ body{
     text-decoration: none;
 }
 
-.logo B{
+.logo B {
     color: var(--prime);
 }
 
-ol{
+ol {
     display: flex;
     margin: auto 0;
 }
 
-ol li{
+ol li {
     list-style: none;
     margin-right: 20px;
 }
 
-ol li a{
+ol li a {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
 }
 
-ol li:hover a{
+ol li:hover a {
     color: var(--prime);
 }
 
-.view{
+.view {
     width: 100%;
-    min-height: 80vh;
     position: relative;
 }
 
-.banner{
+.banner {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -108,7 +107,7 @@ ol li:hover a{
     width: 70%;
 }
 
-.highlights h3{
+.highlights h3 {
     display: inline;
     font-size: 2vw;
     padding: 5px 20px;
@@ -117,32 +116,31 @@ ol li:hover a{
     border-left: 6px solid var(--prime);
 }
 
-.highlights h1{
+.highlights h1 {
     font-size: 9vw;
     text-align: center;
     font-weight: normal;
 }
 
-.highlights b{
+.highlights b {
     color: var(--prime);
     font-weight: 800;
     font-family: sans-serif;
 }
 
-.highlights .tagline{
+.highlights .tagline {
     color: #d7d7d7;
     font-size: 1.2vw;
     text-align: center;
     font-weight: normal;
 }
 
-.highlights .join{
+.highlights .join {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 800;
     padding: 5px 20px;
-    font-size: 1.5vw;
     margin-top: 1.2em;
     color: var(--prime);
     border: 2px solid var(--prime);
@@ -150,34 +148,37 @@ ol li:hover a{
     background: transparent;
     text-transform: uppercase;
     transition: 0.3s ease;
+    font-size: 1.8vw;
+    text-decoration: none;
+
 }
 
-.highlights .join:hover{
+.highlights .join:hover {
     color: #fff;
     cursor: pointer;
     letter-spacing: 1.5px;
     background: var(--prime);
 }
 
-.main{
+.main {
     width: 100%;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.main h2{
+.main h2 {
     font-size: 2.5vw;
     position: relative;
     text-align: center;
-    padding-top:100px;
+    padding-top: 100px;
     display: inline-block;
 }
 
-span{
+span {
     color: var(--prime);
 }
 
-.main h1:before{
+.main h1:before {
     position: absolute;
     content: '';
     background: var(--prime);
@@ -188,57 +189,65 @@ span{
     border-radius: 50px;
 }
 
-.main h6{
+.main h6 {
     margin-top: 10px;
     font-size: 13px;
     font-family: sans-serif;
     font-weight: lighter;
 }
 
-.content{
+.content {
     position: relative;
     display: flex;
     width: 100%;
     padding: 0 30px;
-    justify-content:center;
+    justify-content: center;
 }
 
-.about .content .cols{
+#more {
+    display: none;
+}
+
+.extra {
+    color: #fff;
+}
+
+.about .content .cols {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 20px 70px;
 }
 
-.about .content .cols p b{
+.about .content .cols p b {
     font-size: 20px;
-    margin-left: 20px;
-    margin-right: 2px;
 }
 
-.about .content .cols a{
-     position: relative;
-     top: 20px;
-     color: #fff;
-     background: var(--prime);
-     padding: 5px 20px;
-     border-radius: 5px;
-     text-decoration: none;
-     text-transform: capitalize;
+.about .content .cols a {
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
-.about .content .cols a:hover{
-    color: #000;
-    background: #fff;
+.about .content .cols a:hover {
+    color: #fff;
+    background: var(--prime);
 }
 
-.about .content .cols .box{
+.about .content .cols .box {
     position: relative;
     height: 550px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about .content .cols .box img{
+.about .content .cols .box img {
     position: absolute;
     top: 0;
     left: 0;
@@ -247,26 +256,26 @@ span{
     object-fit: cover;
 }
 
-.plans .content{
+.plans .content {
     flex-wrap: wrap;
 }
 
-.plans .content .frame{
+.plans .content .frame {
     position: relative;
     width: 300px;
     padding: 30px 30px 40px 30px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     margin: 10px;
     background: #222;
 }
 
-.plans .content .frame .headline{
+.plans .content .frame .headline {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.plans .content .frame .headline .title{
+.plans .content .frame .headline .title {
     color: var(--prime);
     font-size: 1.2em;
 }
@@ -276,7 +285,7 @@ span{
     padding-bottom: 18px;
 }
 
-.plans .content .frame .details{
+.plans .content .frame .details {
     text-align: center;
     display: flex;
     align-items: center;
@@ -284,13 +293,13 @@ span{
     flex-direction: column;
 }
 
-.plans .content .frame .details i{
+.plans .content .frame .details i {
     font-size: 1.1em;
     margin-right: 20px;
     Line-height: 22px;
 }
 
-.plans .content .frame .details p{
+.plans .content .frame .details p {
     font-size: 0.9em;
     position: relative;
     padding-bottom: 12px;
@@ -306,7 +315,7 @@ span{
     vertical-align: middle;
 }
 
-.plans .content .frame .button a{
+.plans .content .frame .button a {
     top: 20px;
     color: var(--prime);
     background: transparent;
@@ -319,21 +328,21 @@ span{
     transition: 0.2s ease;
 }
 
-.plans .content .frame .button{
+.plans .content .frame .button {
     display: flex;
     justify-content: center;
 }
 
-.plans .content .frame a:hover{
+.plans .content .frame a:hover {
     color: #fff;
     background: var(--prime);
 }
 
-.workout .content{
+.workout .content {
     flex-wrap: wrap;
 }
-   
-.workout .content .frame{
+
+.workout .content .frame {
     position: relative;
     width: 350px;
     padding: 20px;
@@ -341,15 +350,15 @@ span{
     background: #222;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
-    
-.workout .content .frame .box{
+
+.workout .content .frame .box {
     position: relative;
     height: 200px;
     width: 100%;
     overflow: hidden;
 }
 
-.workout .content .frame .box img{
+.workout .content .frame .box img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -358,41 +367,45 @@ span{
     transition: 0.2s ease-in;
 }
 
-.workout .content .frame .box:hover img{
+.workout .content .frame .box:hover img {
     filter: brightness(100%);
     transform: scale(1.08);
 }
 
-.workout .content .frame .title{
+.workout .content .frame .title {
     color: var(--prime);
     padding: 5px 0;
 }
 
-.workout .content .frame p{
+.workout .content .frame p {
     font-size: 0.8em;
 }
 
-.trainers .content{
+.trainers .content {
     flex-wrap: wrap;
 }
 
-.trainers .content .frame{
+.detailed-info {
+    margin-top: 5px;
+}
+
+.trainers .content .frame {
     position: relative;
     width: 500px;
     padding: 30px 30px 40px 30px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     margin: 10px;
     background: #222;
 }
 
-.trainers .content .frame .box{
+.trainers .content .frame .box {
     position: relative;
     height: 300px;
     width: 100%;
     overflow: hidden;
 }
 
-.trainers .content .frame .box img{
+.trainers .content .frame .box img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -401,19 +414,23 @@ span{
     transition: 0.2s ease-in;
 }
 
-.trainers .content .frame .box:hover img{
+.trainers .content .frame .box:hover img {
     filter: grayscale(0);
     transform: scale(1.08);
 }
 
-.trainers .content .frame .headline{
+.trainers .content .frame .headline {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 8px 0;
 }
 
-.trainers .content .frame .headline i{
+.trainers .content .frame .headline .com{
+    text-decoration: none;
+}
+
+.trainers .content .frame .headline .com i {
     height: 22px;
     width: 22px;
     border: 1.5px solid #fff;
@@ -425,23 +442,23 @@ span{
     Line-height: 22px;
 }
 
-.trainers .content .frame .headline i:hover{
+.trainers .content .frame .headline .com i:hover {
     border: 1.5px solid var(--prime);
     background: var(--prime);
 }
 
-.trainers .content .frame .headline .title{
+.trainers .content .frame .headline .title {
     color: var(--prime);
     font-size: 1.2em;
 }
 
-.trainers .content .frame p{
+.trainers .content .frame p {
     font-size: 0.8em;
     position: relative;
     bottom: 5px;
 }
 
-.trainers .content .frame a{
+.trainers .content .frame .explore-btn {
     top: 20px;
     color: var(--prime);
     background: transparent;
@@ -452,18 +469,19 @@ span{
     position: relative;
     text-transform: capitalize;
     transition: 0.2s ease;
+    text-decoration: none;
 }
 
-.trainers .content .frame a:hover{
+.trainers .content .frame .explore-btn:hover {
     color: #fff;
     background: var(--prime);
 }
 
-.diet .content{
+.diet .content {
     flex-direction: column;
 }
 
-.diet .content .row{
+.diet .content .row {
     display: flex;
     position: relative;
     width: 100%;
@@ -471,27 +489,27 @@ span{
     justify-content: center;
 }
 
-.diet .content .row:nth-child(odd) .a{
+.diet .content .row:nth-child(odd) .a {
     order: 2;
 }
 
-.diet .content .row .cols{
+.diet .content .row .cols {
     position: relative;
     width: 600px;
     padding: 20px 50px;
 }
 
-.diet .content .row .cols .heading{
+.diet .content .row .cols .heading {
     font-size: 2em;
     color: #ff8502;
     text-transform: capitalize;
 }
 
-.diet .content .row:nth-child(odd) .cols .heading{
+.diet .content .row:nth-child(odd) .cols .heading {
     color: #02a3ff;
 }
 
-.diet .content .row .cols .boxes{
+.diet .content .row .cols .boxes {
     position: relative;
     width: 100%;
     height: 350px;
@@ -501,80 +519,102 @@ span{
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.diet .content .row .cols .boxes img{
+.diet .content .row .cols .boxes img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.contact .content{
-    min-height: 100vh;
+.contact {
+    display: flex;
+    flex-direction: row;
 }
 
-.contact .content form{
-    margin: auto 0;
-    width: 400px;
-    height: 500px;
+.contact .info {
+    padding-top: 140px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+.contact .info div i {
+    padding-right: 20px;
+}
+
+.contact .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px 30px 0px;
+    width: 800px;
+    margin-left: auto;
+}
+
+.contact .content form {
+    width: 100%;
+    height: auto;
     padding: 20px;
     background: #fff;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.contact .content form input{
-    color:#222;
+.contact .content form .inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact .content form input {
+    color: #222;
     width: 100%;
     height: 50px;
     padding: 0 10px;
     font-size: 18px;
     border: 1px solid #878787;
     border-radius: 4px;
-    margin: 15px 0;
     background: transparent;
 }
 
-.contact .content form textarea{
+.contact .content form textarea {
     width: 100%;
     padding: 10px;
     color: #222;
     font-size: 18px;
     border: 1px solid #878787;
     border-radius: 4px;
-    margin: 15px 0;
+    margin-top: 15px;
     background: transparent;
 }
 
 .contact .content form input:focus,
-.contact .content form textarea:focus{
+.contact .content form textarea:focus {
     border: 2px solid var(--prime);
     transition: 0.1s ease;
 }
 
-.contact .content form .btn{
+.contact .content form .btn {
+    display: block;
+    position: relative;
+    text-align: center;
     letter-spacing: 1px;
     width: 100px;
-    display: inline-block;
     color: var(--prime);
     border-color: var(--prime);
     cursor: pointer;
     transition: 0.2s ease;
+    float: right;
 }
 
-.contact .content form .btn:hover{
-    background: var(--prime);
+.contact .content form .btn:hover {
     color: #fff;
-}
-.contact .content .bgimg{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('../img/bgimg.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(20%);
+    background: var(--prime);
 }
 
-.copyright{
+.copyright {
     text-transform: capitalize;
     height: 40px;
     width: 100%;
@@ -584,7 +624,7 @@ span{
     font-size: 18px;
 }
 
-.copyright a{
+.copyright a {
     color: var(--prime);
     text-decoration: none;
     margin: 0 2px;
@@ -593,7 +633,6 @@ span{
 
 .health-tips {
     background-color: #131b2b;
-    padding: 80px 0;
 }
 
 .health-tips .main h2 {
@@ -612,7 +651,6 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .health-tips .tip {
@@ -648,16 +686,16 @@ span{
     margin: 10px 0;
 }
 
-@media screen and (max-width: 900px){
-    .navbar{
+@media screen and (max-width: 900px) {
+    .navbar {
         padding: 0 60px;
     }
 
-    .navbar ol{
+    .navbar ol {
         display: none;
     }
 
-    .navbar ol.active{
+    .navbar ol.active {
         top: 60px;
         left: 0;
         width: 100%;
@@ -670,16 +708,16 @@ span{
         height: calc(100% - 60px);
     }
 
-    .navbar ol.active li{
+    .navbar ol.active li {
         margin: 8px;
     }
 
-    .navbar ol.active li a{
+    .navbar ol.active li a {
 
         font-size: 25px;
     }
 
-    .navbar .toggle{
+    .navbar .toggle {
         height: 25px;
         width: 25px;
         margin: auto 0;
@@ -691,7 +729,7 @@ span{
         background-repeat: no-repeat;
     }
 
-    .navbar .toggle.active{
+    .navbar .toggle.active {
         background: url(../img/close.png);
         background-size: 40px;
         background-position: center;
@@ -699,74 +737,69 @@ span{
         filter: invert(1);
     }
 
-    .highlights h3{
+    .highlights h3 {
         font-size: 3vw;
         padding: 5px 10px;
         border-left: 3px solid var(--prime);
     }
 
-    .highlights h1{
+    .highlights h1 {
         font-size: 16vw;
     }
 
-    .highlights .join{
-        font-size: 1.8vw;
-        border: 1px solid var(--prime);
-    }
-
-    .main h2{
+    .main h2 {
         font-size: 1.5rem;
     }
 
-    .main h6{
+    .main h6 {
         font-size: 10px;
     }
 
-    .about .content{
+    .about .content {
         flex-direction: column;
     }
 
-    .workout .content .frame{
+    .workout .content .frame {
         width: 260px;
         padding: 18px;
     }
 
-    .trainers .content .frame{
+    .trainers .content .frame {
         width: 350px;
         padding: 15px 15px 40px 15px;
         margin: 10px 5px;
     }
 
-    .trainers .content .frame .box{
+    .trainers .content .frame .box {
         height: 200px;
     }
 
-    .trainers .content .frame a{
+    .trainers .content .frame a {
         border: 1.5px solid var(--prime);
         padding: 3px 15px;
     }
 
-    .diet .content .row{
+    .diet .content .row {
         flex-direction: column;
     }
 
-    .diet .content .row .cols{
+    .diet .content .row .cols {
         width: 100%;
     }
 
-    .diet .content .row:nth-child(odd) .a{
+    .diet .content .row:nth-child(odd) .a {
         order: 0;
     }
 
-    .diet .content .row .cols .heading{
+    .diet .content .row .cols .heading {
         font-size: 1.5em;
     }
 
-    .diet .content .row .cols p{
+    .diet .content .row .cols p {
         font-size: 13px;
     }
 
-    .diet .content .row .cols .boxes{
+    .diet .content .row .cols .boxes {
         width: 90%;
         margin: auto;
     }
