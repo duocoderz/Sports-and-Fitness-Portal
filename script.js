@@ -9,8 +9,6 @@ function navToggle() {
     menu.classList.toggle("active");
 }
 
-
-
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -25,8 +23,6 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
-
-
 
 function toggleTrainerInfo(exploreBtn) {
     const frame = exploreBtn.closest('.frame');
