@@ -72,10 +72,11 @@ ol li a {
     font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
+    color: #fff !important;
 }
 
 ol li:hover a {
-    color: var(--prime);
+    color: var(--prime) !important;
 }
 
 .view {
