@@ -426,7 +426,7 @@ span {
     margin: 8px 0;
 }
 
-.trainers .content .frame .headline .com{
+.trainers .content .frame .headline .com {
     text-decoration: none;
 }
 
@@ -802,5 +802,17 @@ span {
     .diet .content .row .cols .boxes {
         width: 90%;
         margin: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .info {
+        align-items: center;
+    }
+
+    .contact .content {
+        padding: 0 20vw;
     }
 }
