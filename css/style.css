@@ -175,7 +175,7 @@ ol li:hover a {
     display: inline-block;
 }
 
-span {
+.main h2 span{
     color: var(--prime);
 }
 
@@ -685,6 +685,10 @@ span {
     font-size: 16px;
     color: #fff;
     margin: 10px 0;
+}
+
+.info>:nth-child(2) a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
