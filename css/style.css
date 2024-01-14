@@ -889,4 +889,12 @@ ol li:hover a {
     .contact .content {
         padding: 0 20vw;
     }
+
+    .payment-container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        top: 50px;
+        left: 0;
+    }
 }
