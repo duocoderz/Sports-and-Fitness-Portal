@@ -175,7 +175,7 @@ ol li:hover a {
     display: inline-block;
 }
 
-.main h2 span{
+.main h2 span {
     color: var(--prime);
 }
 
@@ -316,7 +316,7 @@ ol li:hover a {
     vertical-align: middle;
 }
 
-.plans .content .frame .button a {
+.plans .content .frame .button button {
     top: 20px;
     color: var(--prime);
     background: transparent;
@@ -327,6 +327,7 @@ ol li:hover a {
     position: relative;
     text-transform: capitalize;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .plans .content .frame .button {
@@ -334,7 +335,7 @@ ol li:hover a {
     justify-content: center;
 }
 
-.plans .content .frame a:hover {
+.plans .content .frame button:hover {
     color: #fff;
     background: var(--prime);
 }
@@ -689,6 +690,74 @@ ol li:hover a {
 
 .info>:nth-child(2) a {
     text-decoration: none;
+}
+
+.payment-container {
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    background-color: #0d1117;
+    border-radius: 25px;
+    top: -100%;
+    left: -100%;
+    transition: top 500ms ease;
+}
+
+.top-line {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-line h2 {
+    font-size: 2em;
+    padding: 15px;
+}
+
+.top-line img {
+    filter: invert(1);
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+.payment-form {
+    padding: 30px;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #58a6ff;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.payment-form button {
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 500ms;
+    font-size: 0.8em;
+}
+
+.payment-form button:hover{
+    filter: invert(1);
 }
 
 @media screen and (max-width: 900px) {

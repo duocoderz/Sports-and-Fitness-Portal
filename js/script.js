@@ -32,3 +32,22 @@ function toggleTrainerInfo(exploreBtn) {
   detailedInfo.style.display = detailedInfo.style.display === 'none' ? 'block' : 'none';
   exploreBtn.textContent = detailedInfo.style.display === 'none' ? 'Explore' : 'Show Less';
 }
+
+// add an event listner for payment portal
+Array.from(document.getElementsByClassName("button")).forEach(e => {
+  e.addEventListener("click", () => {
+    document.querySelector(".payment-container").style.top = "10%"
+    document.querySelector(".payment-container").style.left = "10%"
+  })
+})
+
+// add an event listner to close payment portal
+document.querySelector(".top-line img").addEventListener("click", () => {
+  document.querySelector(".payment-container").style.top = "-100%";
+  document.querySelector(".payment-container").style.left = "-100%"
+})
+
+document.querySelector("#form-submit").addEventListener("click", () => {
+  document.querySelector(".payment-container").style.top = "-100%";
+  document.querySelector(".payment-container").style.left = "-100%"
+})
