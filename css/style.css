@@ -723,7 +723,7 @@ ol li:hover a {
 }
 
 .payment-form {
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
     color: #ffffff;
     font-size: 1.2em;
 }
