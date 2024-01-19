@@ -695,8 +695,8 @@ ol li:hover a {
 .payment-container {
     position: fixed;
     width: 80vw;
-    height: 80vh;
-    background-color: #0d1117;
+    height: 650px;
+    background-color: #070707;
     border-radius: 25px;
     top: -100%;
     left: -100%;
@@ -756,7 +756,7 @@ ol li:hover a {
     font-size: 0.8em;
 }
 
-.payment-form button:hover{
+.payment-form button:hover {
     filter: invert(1);
 }
 
@@ -892,9 +892,18 @@ ol li:hover a {
 
     .payment-container {
         width: 100vw;
-        height: 100vh;
+        height: 150vh;
         border-radius: 0;
-        top: 50px;
+        top: 0;
+        padding: 0;
         left: 0;
+        display: none;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .container {
+        background-color: transparent;
+        opacity: 1;
     }
 }

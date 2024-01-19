@@ -36,18 +36,34 @@ function toggleTrainerInfo(exploreBtn) {
 // add an event listner for payment portal
 Array.from(document.getElementsByClassName("button")).forEach(e => {
   e.addEventListener("click", () => {
-    document.querySelector(".payment-container").style.top = "10%"
-    document.querySelector(".payment-container").style.left = "10%"
-  })
-})
+    const maxWidth = 900;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (windowWidth > maxWidth) {
+      document.querySelector(".payment-container").style.top = "10%";
+      document.querySelector(".payment-container").style.left = "10%";
+    } else {
+      document.querySelector(".payment-container").style.top = "0";
+      document.querySelector(".payment-container").style.left = "0";
+    }
+
+    document.querySelector(".container").style.backgroundColor = "#121212";
+    document.querySelector(".container").style.opacity = "0.7";
+    document.querySelector(".payment-container").style.display = "block";
+  });
+});
 
 // add an event listner to close payment portal
 document.querySelector(".top-line img").addEventListener("click", () => {
   document.querySelector(".payment-container").style.top = "-100%";
-  document.querySelector(".payment-container").style.left = "-100%"
+  document.querySelector(".payment-container").style.left = "-100%";
+  document.querySelector(".container").style.backgroundColor = "transparent";
+  document.querySelector(".container").style.opacity = "1";
 })
 
 document.querySelector("#form-submit").addEventListener("click", () => {
   document.querySelector(".payment-container").style.top = "-100%";
-  document.querySelector(".payment-container").style.left = "-100%"
+  document.querySelector(".payment-container").style.left = "-100%";
+  document.querySelector(".container").style.backgroundColor = "transparent";
+  document.querySelector(".container").style.opacity = "1";
 })
